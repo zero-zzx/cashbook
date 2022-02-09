@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/frag_income_gv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:numColumns="5" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/frag_income_tv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="请输入钱数"
+            android:digits=".0123456789"
+            android:layout_toLeftOf="@+id/frag_income_time"/>
+        <TextView
+            android:id="@+id/frag_income_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="2022年02月07日"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/frag_income_note"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入备注"/>
+    <Button
+        android:id="@+id/frag_income_ensure"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="确定"/>
+
+</LinearLayout>

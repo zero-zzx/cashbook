@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/main_lv_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/in_qt_fs"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/main_lv_iv">
+
+        <TextView
+            android:id="@+id/main_lv_typename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其它"/>
+        <TextView
+            android:id="@+id/main_lv_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是备注。。。。。。。。。"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/main_lv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¥ 1314"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/main_lv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022年02月22日 22:22"
+        android:layout_toLeftOf="@id/main_lv_money"
+        android:layout_marginRight="20dp"/>
+
+
+</RelativeLayout>
