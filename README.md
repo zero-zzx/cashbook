@@ -1,2 +1,2 @@
 # cashbook
-an easy app for the primary
+A simple projects for novices
